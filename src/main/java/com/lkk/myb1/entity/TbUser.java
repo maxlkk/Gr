@@ -12,7 +12,7 @@ public class TbUser {
     private Integer id;
 
     /**
-     * code码
+     * 编码
      */
     private String code;
 
@@ -22,14 +22,14 @@ public class TbUser {
     private String name;
 
     /**
-     * 年龄
-     */
-    private Integer age;
-
-    /**
      * 性别：1-男，2-女
      */
     private String six;
+
+    /**
+     * 年龄
+     */
+    private Integer age;
 
     /**
      * 获取主键id
@@ -50,18 +50,18 @@ public class TbUser {
     }
 
     /**
-     * 获取code码
+     * 获取编码
      *
-     * @return code - code码
+     * @return code - 编码
      */
     public String getCode() {
         return code;
     }
 
     /**
-     * 设置code码
+     * 设置编码
      *
-     * @param code code码
+     * @param code 编码
      */
     public void setCode(String code) {
         this.code = code;
@@ -86,24 +86,6 @@ public class TbUser {
     }
 
     /**
-     * 获取年龄
-     *
-     * @return age - 年龄
-     */
-    public Integer getAge() {
-        return age;
-    }
-
-    /**
-     * 设置年龄
-     *
-     * @param age 年龄
-     */
-    public void setAge(Integer age) {
-        this.age = age;
-    }
-
-    /**
      * 获取性别：1-男，2-女
      *
      * @return six - 性别：1-男，2-女
@@ -119,5 +101,23 @@ public class TbUser {
      */
     public void setSix(String six) {
         this.six = six;
+    }
+
+    /**
+     * 获取年龄
+     *
+     * @return age - 年龄
+     */
+    public Integer getAge() {
+        return age;
+    }
+
+    /**
+     * 设置年龄
+     *
+     * @param age 年龄
+     */
+    public void setAge(Integer age) {
+        this.age = age;
     }
 }
