@@ -1,5 +1,6 @@
 package com.lkk.myb1.dao;
 
+import com.lkk.myb1.dao.baseDao.AbstractBaseMapper;
 import com.lkk.myb1.entity.TbUser;
 import com.lkk.myb1.mapper.TbUserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,10 +14,12 @@ import java.util.List;
  * @Description:
  */
 @Repository
-public class UserDao {
+public class UserMapper extends AbstractBaseMapper<TbUser,Integer> {
 
     @Autowired
     private TbUserMapper tbUserMapper;
+
+
 
 
     public List<TbUser> selectAll(){
